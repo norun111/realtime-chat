@@ -1,9 +1,9 @@
 <h1>Chat room No.<%= @room.id %></h1>
-<!-- 表示の左右わけに使う閲覧ユーザー情報 -->
+
 <div id="show_user" data-show_user="<%= current_user.id %>"></div>
 <div class="col-md-12">
   <div class="chat_box">
-    <!-- カスタムデータ属性にルームIDを格納し、js側で利用する -->
+  
     <div id="messages", data-room_id="<%= @room.id %>"></div>
     <%= render @messages %>
   </div>
